@@ -1,0 +1,47 @@
+@media only screen and (max-width: 800px) {
+  div {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+body {
+  padding: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
+  grid-gap: 20px;
+  border: dotted;
+}
+
+.item:first-of-type {
+  grid-row: span 2;
+  grid-column: span 1;
+  background: red;
+}
+
+.item:nth-of-type(2) {
+  grid-column: span 3;
+  background: green;
+}
+
+.item:nth-of-type(3) {
+  grid-column: span 2;
+  grid-row: span 2;
+  background: blue
+}
+
+.item:last-of-type {
+  grid-column: span 3;
+  grid-row: span 3;
+  background: yellow;
+}
+
+h1 {
+  font-size: large;
+  color: green;
+  font-style: italic;
+}
